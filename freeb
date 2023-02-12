@@ -1,0 +1,10 @@
+#!/bin/bash
+#
+#$SBATCH --job-name=wgs_after
+#
+#$SBATCH --ntasks=1
+#$SBATCH --cpus-per-task=16
+
+freebayes -f reference.fa input.bam > variants.vcf 
+
+vcftools --vcf variants.vcf --minQ 30 --recode --out filtered_variants.vcf
