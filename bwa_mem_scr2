@@ -1,9 +1,10 @@
+
 #!/bin/bash
 
 ref_genome='/home/nilmbb/share/plants/Genomes/flax/GCA_000224295.2_ASM22429v2_genomic.fna'
 
 if [ $# -ne 2 ]; then
-  echo "Usage: $0 sample_name read1.fastq read2.fastq"
+  echo "Usage: $0 sample_name read1.fasta.gz read2.fasta.gz"
   exit 1
 fi
 
@@ -16,7 +17,7 @@ if [ ! -f "$read1" ] || [ ! -f "$read2" ]; then
   exit 1
 fi
 
-echo 'starting'
+echo "all good"
 /home/nilmbb/share/plants/BSSEQ/Bseq1022/analysis/bwa_results/scripts/bwa-0.7.17/bwa mem "$ref_genome" "$read1" "$read2" > "$sample_name.sam"
 
 /home/nilmbb/share/plants/BSSEQ/Bseq1022/analysis/bwa_results/sam/samtools-1.16.1/samtools view -bS "$sample_name.sam" > "$sample_name.bam"
@@ -27,7 +28,10 @@ echo 'starting'
 
 rm "$sample_name.sam" "$sample_name.bam"
 
-echo 'all good'
 #/home/nilmbb/share/plants/BSSEQ/Bseq1022/analysis/bwa_results/scripts/bwa_mem_sc2.sh V350133434_L01_B5GPLAcoprRAABA-527 /home/nilmbb/share/plants/BSSEQ/Bseq1022/analysis/results/F22FTSEUH$
+
+
+
+
 
 
