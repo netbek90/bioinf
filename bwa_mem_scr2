@@ -27,4 +27,4 @@ samtools index "$sample_name.sorted.bam"
 
 rm "$sample_name.sam" "$sample_name.bam"
 
-#./process_sample.sh my_sample my_read1.fastq my_read2.fastq
+#/home/nilmbb/share/plants/BSSEQ/Bseq1022/analysis/bwa_results/scripts/bwa_mem_sc2.sh V350133434_L01_B5GPLAcoprRAABA-527 /home/nilmbb/share/plants/BSSEQ/Bseq1022/analysis/results/F22FTSEUHT1158_PLAcoprR/Res/V350133434_L01_B5GPLAcoprRAABA-527/V350133434_L01_B5GPLAcoprRAABA-527_1.fasta.gz /home/nilmbb/share/plants/BSSEQ/Bseq1022/analysis/results/F22FTSEUHT1158_PLAcoprR/Res/V350133434_L01_B5GPLAcoprRAABA-527/V350133434_L01_B5GPLAcoprRAABA-527_2.fasta.gz
