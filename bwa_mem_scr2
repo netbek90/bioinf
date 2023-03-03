@@ -16,7 +16,7 @@ if [ ! -f "$read1" ] || [ ! -f "$read2" ]; then
   exit 1
 fi
 
-echo 'all good'
+echo 'starting'
 /home/nilmbb/share/plants/BSSEQ/Bseq1022/analysis/bwa_results/scripts/bwa-0.7.17/bwa mem "$ref_genome" "$read1" "$read2" > "$sample_name.sam"
 
 /home/nilmbb/share/plants/BSSEQ/Bseq1022/analysis/bwa_results/sam/samtools-1.16.1/samtools view -bS "$sample_name.sam" > "$sample_name.bam"
@@ -27,6 +27,7 @@ echo 'all good'
 
 rm "$sample_name.sam" "$sample_name.bam"
 
+echo 'all good'
 #/home/nilmbb/share/plants/BSSEQ/Bseq1022/analysis/bwa_results/scripts/bwa_mem_sc2.sh V350133434_L01_B5GPLAcoprRAABA-527 /home/nilmbb/share/plants/BSSEQ/Bseq1022/analysis/results/F22FTSEUH$
 
 
