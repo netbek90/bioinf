@@ -22,5 +22,9 @@ for dir in "${dir_list[@]}"; do
     sample_name="$(basename "$dir")"
     read1="$dir"/*_1.fasta.gz
     read2="$dir"/*_2.fasta.gz
+    echo $read1
+    echo $read2
+    echo $sample_name
     /home/nilmbb/share/plants/BSSEQ/Bseq1022/analysis/bwa_results/scripts/bwa_mem_sc2.sh "$sample_name" "$read1" "$read2"
 done
+
