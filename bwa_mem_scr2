@@ -28,7 +28,7 @@ echo "all good"
 
 rm "$sample_name.sam" "$sample_name.bam"
 
-#/home/nilmbb/share/plants/BSSEQ/Bseq1022/analysis/bwa_results/scripts/bwa_mem_sc2.sh V350133434_L01_B5GPLAcoprRAABA-527 /home/nilmbb/share/plants/BSSEQ/Bseq1022/analysis/results/F22FTSEUH$
+#/home/nilmbb/share/plants/BSSEQ/Bseq1022/analysis/bwa_results/scripts/bwa_mem_sc2.sh V350133434_L01_B5GPLAcoprRAABA-527 /home/nilmbb/share/plants/BSSEQ/Bseq1022/analysis/results/F22FTSEUHT1158_PLAcoprR/Res/V350133434_L01_B5GPLAcoprRAABA-527/V350133434_L01_B5GPLAcoprRAABA-527_1.fasta.gz /home/nilmbb/share/plants/BSSEQ/Bseq1022/analysis/results/F22FTSEUHT1158_PLAcoprR/Res/V350133434_L01_B5GPLAcoprRAABA-527/V350133434_L01_B5GPLAcoprRAABA-527_2.fasta.gz
 
 
 
